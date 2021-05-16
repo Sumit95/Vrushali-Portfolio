@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="57px" viewBox="0 0 62 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>v-logo</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="v-logo">
+            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" opacity="0" x="0.5" y="0.5" width="61" height="56"></rect>
+            <g id="Group-41" transform="translate(0.000000, 3.000000)" fill="#FFFFFF">
+                <polygon id="Path" fill-rule="nonzero" points="33.1643258 52 51 0 38.0351124 0 25.5 39.2592593 13.0365169 0 0 0 17.8356742 52"></polygon>
+                <path d="M54.5369458,53 C56.7044335,53 58.4901478,52.2876344 59.8940887,50.8629032 C61.2980296,49.438172 62,47.6774194 62,45.5806452 C62,43.4301075 61.2980296,41.6290323 59.8940887,40.1774194 C58.4901478,38.7258065 56.7044335,38 54.5369458,38 C52.320197,38 50.5098522,38.7258065 49.1059113,40.1774194 C47.7019704,41.6290323 47,43.4301075 47,45.5806452 C47,47.6774194 47.7019704,49.438172 49.1059113,50.8629032 C50.5098522,52.2876344 52.320197,53 54.5369458,53 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
