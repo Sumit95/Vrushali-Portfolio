@@ -29,6 +29,83 @@
     <link property="stylesheet" rel="stylesheet" id="elementor-icons-css" href="css/css-elementor-icons.min.css" type="text/css" media="all">
     <link property="stylesheet" rel="stylesheet" id="elementor-animations-css" href="css/animations-animations.min.css" type="text/css" media="all">
     <link property="stylesheet" rel="stylesheet" id="elementor-frontend-css" href="css/css-frontend.min.css" type="text/css" media="all">
+    <style>
+        .glyphicon-music:before {
+            content: "\e002"
+        }
+        /*** music box ***/
+        
+        .music-box {
+            position: fixed;
+            width: 300px;
+            height: 160px;
+            z-index: 120;
+            bottom: 30px;
+            right: 30px;
+        }
+        
+        @media (max-width: 991px) {
+            .music-box {
+                width: 250px;
+                height: 120px;
+                right: auto;
+                left: 30px;
+            }
+        }
+        
+        .music-box .music-holder {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: -30px;
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+        }
+        
+        .music-box .music-holder iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .music-box button {
+            background: rgba(0, 0, 0, 0.1);
+            width: 40px;
+            height: 40px;
+            line-height: 37px;
+            font-size: 18px;
+            font-size: 1rem;
+            color: #ffffff;
+            border: 2px solid #e6e6e6;
+            outline: 0;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+        }
+        
+        @media (max-width: 991px) {
+            .music-box button {
+                right: auto;
+                left: 0;
+            }
+        }
+        
+        .music-box .toggle-music-box {
+            top: -50px;
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
     <style id="elementor-frontend-inline-css" type="text/css">
         .elementor-kit-6100 {
             --e-global-color-primary: #6EC1E4;
@@ -505,6 +582,7 @@
             <div class="preloader_circ4"></div>
         </div>
     </div> -->
+
     <div class="body_wrap">
 
         <div class="page_wrap with_background helion_inline_1574610914">
@@ -876,8 +954,8 @@
                                                                     <div class="elementor-element elementor-element-e503191 animation_type_block sc_fly_static elementor-widget elementor-widget-text-editor" data-id="e503191" data-element_type="widget" data-widget_type="text-editor.default">
                                                                         <div class="elementor-widget-container">
                                                                             <div class="elementor-text-editor elementor-clearfix">
-                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                                                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate</p>
+                                                                                <p>I'm a highly dedicated and motivated graphic designer and web designer,who is ready to make modern,enhanced and easy to understand designs. For me designing is not just making
+                                                                                    ugly things look good but should inspire people everyday.</p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -890,8 +968,10 @@
                                                                 <div class="elementor-widget-wrap">
                                                                     <div class="elementor-element elementor-element-309aa5e animation_type_block sc_fly_static elementor-widget elementor-widget-trx_sc_button" data-id="309aa5e" data-element_type="widget" data-widget_type="trx_sc_button.default">
                                                                         <div class="elementor-widget-container">
-                                                                            <div id="trx_sc_button_527049243" class="sc_item_button sc_button_wrap"><a href="images/vrushali-mali-resume-dummy.pdf" class="sc_button sc_button_default download_btn sc_button_size_normal sc_button_with_icon sc_button_icon_left color_style_dark"
-                                                                                    target="_blank"><span class="sc_button_icon"><span class="icon-down-arrow-key"></span></span><span class="sc_button_text"><span class="sc_button_title">Download Resume.pdf</span></span><!-- /.sc_button_text --></a>
+                                                                            <div id="trx_sc_button_527049243" class="sc_item_button sc_button_wrap">
+                                                                                <a href="images/vrushali-mali-resume.pdf" class="sc_button sc_button_default download_btn sc_button_size_normal sc_button_with_icon sc_button_icon_left color_style_dark" target="_blank"><span class="sc_button_icon"><span class="icon-down-arrow-key"></span></span><span class="sc_button_text"><span class="sc_button_title">Download Resume.pdf</span></span>
+                                                                                    <!-- /.sc_button_text -->
+                                                                                </a>
                                                                                 <!-- /.sc_button -->
                                                                             </div>
                                                                             <!-- /.sc_item_button -->
@@ -1126,8 +1206,9 @@
                                                                             <div id="trx_sc_title_628066294" class="sc_title color_style_dark sc_title_decoration"><span class="sc_item_subtitle sc_title_subtitle sc_item_subtitle_above sc_item_title_style_decoration">Experience</span>
                                                                                 <h1 class="sc_item_title sc_title_title sc_item_title_style_decoration sc_item_title_tag"><span class="sc_item_title_text">Journey Till Now</span></h1>
                                                                                 <div class="sc_item_descr sc_title_descr">
-                                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                                                                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+                                                                                    <p>The road of life twists and turns and no two directions are ever the same. Yet our lessons come from the journey, not the destination. Learned a lot from organisations
+                                                                                        I worked in and people I worked with. So far so good.
+                                                                                    </p>
                                                                                 </div>
                                                                             </div>
                                                                             <!-- /.sc_title -->
@@ -1171,7 +1252,7 @@
                                                                                             <div class="elementor-element elementor-element-6ccf6642 animation_type_block sc_fly_static elementor-widget elementor-widget-trx_sc_title" data-id="6ccf6642" data-element_type="widget" data-widget_type="trx_sc_title.default">
                                                                                                 <div class="elementor-widget-container">
                                                                                                     <div id="trx_sc_title_629068325" class="sc_title sc_title_default">
-                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Oct 2018 - Mar 2019</span></h6>
+                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Oct 2020 - Present</span></h6>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -1184,7 +1265,7 @@
                                                                                             <div class="elementor-element elementor-element-61d54601 animation_type_block sc_fly_static elementor-widget elementor-widget-trx_sc_title" data-id="61d54601" data-element_type="widget" data-widget_type="trx_sc_title.default">
                                                                                                 <div class="elementor-widget-container">
                                                                                                     <div id="trx_sc_title_1080824344" class="sc_title sc_title_default">
-                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Tata Consultancy Services (TCS)</span></h6>
+                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Jack In The Box Worldwide</span></h6>
                                                                                                         <p>Graphic Designer</p>
                                                                                                     </div>
                                                                                                 </div>
@@ -1297,7 +1378,7 @@
                                                                                             <div class="elementor-element elementor-element-48dab5d5 animation_type_block sc_fly_static elementor-widget elementor-widget-trx_sc_title" data-id="48dab5d5" data-element_type="widget" data-widget_type="trx_sc_title.default">
                                                                                                 <div class="elementor-widget-container">
                                                                                                     <div id="trx_sc_title_1133151" class="sc_title sc_title_default">
-                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Oct 2019 - Apr 2020</span></h6>
+                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">May 2020 - Jul 2020</span></h6>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -1310,8 +1391,8 @@
                                                                                             <div class="elementor-element elementor-element-4e7de249 animation_type_block sc_fly_static elementor-widget elementor-widget-trx_sc_title" data-id="4e7de249" data-element_type="widget" data-widget_type="trx_sc_title.default">
                                                                                                 <div class="elementor-widget-container">
                                                                                                     <div id="trx_sc_title_1746416853" class="sc_title sc_title_default">
-                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Digi Osmosis</span></h6>
-                                                                                                        <p>Grpahic Designer</p>
+                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Purplle.com</span></h6>
+                                                                                                        <p>Graphic Designer</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -1368,7 +1449,7 @@
                                                                                             <div class="elementor-element elementor-element-48dab5d5 animation_type_block sc_fly_static elementor-widget elementor-widget-trx_sc_title" data-id="48dab5d5" data-element_type="widget" data-widget_type="trx_sc_title.default">
                                                                                                 <div class="elementor-widget-container">
                                                                                                     <div id="trx_sc_title_1133151" class="sc_title sc_title_default">
-                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Oct 2020 - </span></h6>
+                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Oct 2019 - Jan 2020</span></h6>
                                                                                                     </div>
                                                                                                     <!-- /.sc_title -->
                                                                                                 </div>
@@ -1382,8 +1463,66 @@
                                                                                             <div class="elementor-element elementor-element-4e7de249 animation_type_block sc_fly_static elementor-widget elementor-widget-trx_sc_title" data-id="4e7de249" data-element_type="widget" data-widget_type="trx_sc_title.default">
                                                                                                 <div class="elementor-widget-container">
                                                                                                     <div id="trx_sc_title_1746416853" class="sc_title sc_title_default">
-                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Jack In The Box Worldwide</span></h6>
-                                                                                                        <p>Grpahic Designer</p>
+                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Digi Osmosis</span></h6>
+                                                                                                        <p>Graphic Designer</p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                    <div class="elementor-element elementor-element-49d42716 sc_layouts_hide_on_notebook sc_layouts_hide_on_tablet sc_layouts_hide_on_mobile animation_type_block sc_fly_static elementor-widget elementor-widget-spacer" data-id="49d42716" data-element_type="widget"
+                                                                        data-widget_type="spacer.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-spacer">
+                                                                                <div class="elementor-spacer-inner"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-22cba2a animation_type_block sc_fly_static elementor-widget elementor-widget-spacer" data-id="22cba2a" data-element_type="widget" data-widget_type="spacer.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-spacer">
+                                                                                <div class="elementor-spacer-inner"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-49d42716 sc_layouts_hide_on_notebook sc_layouts_hide_on_tablet sc_layouts_hide_on_mobile animation_type_block sc_fly_static elementor-widget elementor-widget-spacer" data-id="49d42716" data-element_type="widget"
+                                                                        data-widget_type="spacer.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-spacer">
+                                                                                <div class="elementor-spacer-inner"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <section class="elementor-section elementor-inner-section elementor-element elementor-element-56943b2f elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="56943b2f" data-element_type="section"
+                                                                        data-settings='{"animation":"fadeInRight","animation_delay":600}'>
+                                                                        <div class="elementor-container elementor-column-gap-no">
+                                                                            <div class="elementor-row">
+                                                                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3ee89d41 sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left" data-id="3ee89d41" data-element_type="column">
+                                                                                    <div class="elementor-column-wrap elementor-element-populated">
+                                                                                        <div class="elementor-widget-wrap">
+                                                                                            <div class="elementor-element elementor-element-48dab5d5 animation_type_block sc_fly_static elementor-widget elementor-widget-trx_sc_title" data-id="48dab5d5" data-element_type="widget" data-widget_type="trx_sc_title.default">
+                                                                                                <div class="elementor-widget-container">
+                                                                                                    <div id="trx_sc_title_1133151" class="sc_title sc_title_default">
+                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Oct 2018 - Feb 2019</span></h6>
+                                                                                                    </div>
+                                                                                                    <!-- /.sc_title -->
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="elementor-column elementor-col-66 elementor-inner-column elementor-element elementor-element-59c18a5d sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left" data-id="59c18a5d" data-element_type="column">
+                                                                                    <div class="elementor-column-wrap elementor-element-populated">
+                                                                                        <div class="elementor-widget-wrap">
+                                                                                            <div class="elementor-element elementor-element-4e7de249 animation_type_block sc_fly_static elementor-widget elementor-widget-trx_sc_title" data-id="4e7de249" data-element_type="widget" data-widget_type="trx_sc_title.default">
+                                                                                                <div class="elementor-widget-container">
+                                                                                                    <div id="trx_sc_title_1746416853" class="sc_title sc_title_default">
+                                                                                                        <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Tata Consultancy Services</span></h6>
+                                                                                                        <p>Graphic Designer</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -1399,7 +1538,7 @@
                                                     </div>
                                                 </div>
                                             </section>
-                                            <section class="elementor-section elementor-top-section elementor-element elementor-element-b997be8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b997be8" data-element_type="section">
+                                            <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-b997be8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b997be8" data-element_type="section">
                                                 <div class="elementor-container elementor-column-gap-extended">
                                                     <div class="elementor-row">
                                                         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9020e8d sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left" data-id="9020e8d" data-element_type="column">
@@ -1417,7 +1556,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>
+                                            </section> -->
                                             <section class="elementor-section elementor-top-section elementor-element elementor-element-04192e9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="04192e9" data-element_type="section">
                                                 <div class="elementor-container elementor-column-gap-extended">
                                                     <div class="elementor-row">
@@ -1453,7 +1592,7 @@
             <!-- </.page_content_wrap> -->
 
             <a id="footer_skip_link_anchor" class="helion_skip_link_anchor" href="#"></a>
-            <footer class="footer_wrap footer_custom footer_custom_527 footer_custom_footer-home-2						 scheme_dark						">
+            <footer class="footer_wrap footer_custom footer_custom_527 footer_custom_footer-home-2 scheme_dark">
                 <div data-elementor-type="cpt_layouts" data-elementor-id="527" class="elementor elementor-527" data-elementor-settings="[]">
                     <div class="elementor-inner">
                         <div class="elementor-section-wrap">
